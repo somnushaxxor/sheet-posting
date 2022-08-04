@@ -13,8 +13,8 @@ import java.time.LocalDateTime;
 @Setter
 @NoArgsConstructor
 @Entity
-@Table(name = "messages")
-public class Message {
+@Table(name = "posts")
+public class Post {
 
     @Id
     @GeneratedValue
@@ -27,7 +27,7 @@ public class Message {
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime creationDate;
 
-    public Message(String text) {
+    public Post(String text) {
         this.text = text;
         creationDate = LocalDateTime.now();
     }

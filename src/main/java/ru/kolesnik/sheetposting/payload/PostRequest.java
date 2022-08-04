@@ -7,7 +7,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-public class MessageRequest {
+public class PostRequest {
 
     private String text;
 
